@@ -33,6 +33,7 @@ def get_price(searchterm, headless):
         price = str(driver.find_element_by_xpath('/html/body/div/form/table[2]/tbody/tr/td[2]/div[1]/table/tbody/tr/td[1]/table/tbody/tr[2]/td/p[2]/span').text)
         if headless:
             driver.close()
+
         return price
     except:
         with open('page.html', 'w') as f:

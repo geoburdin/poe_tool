@@ -8,13 +8,13 @@ build_exe_options = {"packages": ["os"], "excludes": ["tkinter"]}
 # console application).
 base = None
 
-build_exe_options = {'include_files':['get_price.py', 'chromedriver.exe', 'screen.py', 'form.ui']}
+build_exe_options = {'include_files':['get_price.py', 'chromedriver.exe', 'screen.py', 'form.ui', 'exact.png', 'ok.png', 'field_for_price.png', 'select.png']}
 setup(  name = "poe_freeze",
         version = "0.2",
         description = "with cx_freeze, price setting",
         author_email='georgiyegor.burdin.l@gmail.com',
         options = {"build_exe": build_exe_options},
-        executables = [Executable("main.py")]
+        executables = [Executable("main.py", base = "Win32GUI")]
         )
 
 #python setup.py build

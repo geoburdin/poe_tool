@@ -57,17 +57,17 @@ def find_bright(img):
 
             pyautogui.rightClick(int(x) + 17, int(y) + 150, duration=0.1)
 
-            pyautogui.moveTo(pyautogui.locateCenterOnScreen('select.png', confidence=0.8), duration=0.1)
+            pyautogui.moveTo(pyautogui.locateCenterOnScreen('select.png', confidence=0.5), duration=0.1)
             pyautogui.click(duration=0.1)
 
-            pyautogui.moveTo(pyautogui.locateCenterOnScreen('exact.png', confidence=0.8), duration=0.1)
+            pyautogui.moveTo(pyautogui.locateCenterOnScreen('exact.png', confidence=0.7), duration=0.1)
             pyautogui.click(duration=0.1)
 
-            pyautogui.moveTo(pyautogui.locateCenterOnScreen('field_for_price.png', confidence=0.8), duration=0.1)
+            pyautogui.moveTo(pyautogui.locateCenterOnScreen('field_for_price.png', confidence=0.7), duration=0.1)
             pyautogui.click(duration=0.1)
 
             pyautogui.write(price, interval=0.25)
-            ok=pyautogui.locateCenterOnScreen('ok.png', confidence=0.8)
+            ok=pyautogui.locateCenterOnScreen('ok.png', confidence=0.7)
             pyautogui.moveTo(ok, duration=0.1)
             pyautogui.click(duration=0.1)
 
